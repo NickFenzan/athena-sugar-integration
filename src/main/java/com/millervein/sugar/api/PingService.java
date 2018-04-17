@@ -7,6 +7,7 @@ import java.net.URL;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+import com.millervein.sugarathenaintegration.Authenticator;
 
 public class PingService {
 	

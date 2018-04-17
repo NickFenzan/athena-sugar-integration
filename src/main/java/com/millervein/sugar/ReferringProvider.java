@@ -9,116 +9,99 @@ public class ReferringProvider {
 	String firstName;
 	String middleInitial;
 	String lastName;
-	String fullName;
+	String suffix;
 	String providerType;
 	String specialty;
-	String ansiSpecialtyCode;
-	String note;
+	String phone;
+	String fax;
+	String email;
 	String[] hospitalAffiliations;
-
 	public String getSugarId() {
 		return sugarId;
 	}
-
 	public void setSugarId(String sugarId) {
 		this.sugarId = sugarId;
 	}
-
 	public Integer getAthenaId() {
 		return athenaId;
 	}
-
 	public void setAthenaId(Integer athenaId) {
 		this.athenaId = athenaId;
 	}
-
 	public Integer getNpiNumber() {
 		return npiNumber;
 	}
-
 	public void setNpiNumber(Integer npiNumber) {
 		this.npiNumber = npiNumber;
 	}
-
 	public String getFirstName() {
 		return firstName;
 	}
-
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
 	public String getMiddleInitial() {
 		return middleInitial;
 	}
-
 	public void setMiddleInitial(String middleInitial) {
 		this.middleInitial = middleInitial;
 	}
-
 	public String getLastName() {
 		return lastName;
 	}
-
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	public String getFullName() {
-		return fullName;
+	public String getSuffix() {
+		return suffix;
 	}
-
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public void setSuffix(String suffix) {
+		this.suffix = suffix;
 	}
-
 	public String getProviderType() {
 		return providerType;
 	}
-
 	public void setProviderType(String providerType) {
 		this.providerType = providerType;
 	}
-
 	public String getSpecialty() {
 		return specialty;
 	}
-
 	public void setSpecialty(String specialty) {
 		this.specialty = specialty;
 	}
-
-	public String getAnsiSpecialtyCode() {
-		return ansiSpecialtyCode;
+	public String getPhone() {
+		return phone;
 	}
-
-	public void setAnsiSpecialtyCode(String ansiSpecialtyCode) {
-		this.ansiSpecialtyCode = ansiSpecialtyCode;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-
-	public String getNote() {
-		return note;
+	public String getFax() {
+		return fax;
 	}
-
-	public void setNote(String note) {
-		this.note = note;
+	public void setFax(String fax) {
+		this.fax = fax;
 	}
-
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String[] getHospitalAffiliations() {
 		return hospitalAffiliations;
 	}
-
 	public void setHospitalAffiliations(String[] hospitalAffiliations) {
 		this.hospitalAffiliations = hospitalAffiliations;
 	}
-
 	@Override
 	public String toString() {
 		return "ReferringProvider [sugarId=" + sugarId + ", athenaId=" + athenaId + ", npiNumber=" + npiNumber
 				+ ", firstName=" + firstName + ", middleInitial=" + middleInitial + ", lastName=" + lastName
-				+ ", fullName=" + fullName + ", providerType=" + providerType + ", specialty=" + specialty
-				+ ", ansiSpecialtyCode=" + ansiSpecialtyCode + ", note=" + note + ", hospitalAffiliations="
+				+ ", suffix=" + suffix + ", providerType=" + providerType + ", specialty=" + specialty + ", phone="
+				+ phone + ", fax=" + fax + ", email=" + email + ", hospitalAffiliations="
 				+ Arrays.toString(hospitalAffiliations) + "]";
 	}
+
 
 }

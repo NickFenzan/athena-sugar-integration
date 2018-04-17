@@ -1,22 +1,13 @@
 package com.millervein.sugar;
 
+import java.util.Arrays;
+
 public class Organization {
 	String sugarId;
 	Integer athenaId;
-	Integer npiNumber;
 	String name;
-	String providerType;
+	String[] hospitalAffiliations;
 	String specialty;
-	String ansiSpecialtyCode;
-	String note;
-	String address;
-	String address2;
-	String city;
-	String state;
-	String zip;
-	String phone;
-	String fax;
-	String email;
 
 	public String getSugarId() {
 		return sugarId;
@@ -34,14 +25,6 @@ public class Organization {
 		this.athenaId = athenaId;
 	}
 
-	public Integer getNpiNumber() {
-		return npiNumber;
-	}
-
-	public void setNpiNumber(Integer npiNumber) {
-		this.npiNumber = npiNumber;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -50,12 +33,12 @@ public class Organization {
 		this.name = name;
 	}
 
-	public String getProviderType() {
-		return providerType;
+	public String[] getHospitalAffiliations() {
+		return hospitalAffiliations;
 	}
 
-	public void setProviderType(String providerType) {
-		this.providerType = providerType;
+	public void setHospitalAffiliations(String[] hospitalAffiliations) {
+		this.hospitalAffiliations = hospitalAffiliations;
 	}
 
 	public String getSpecialty() {
@@ -66,93 +49,10 @@ public class Organization {
 		this.specialty = specialty;
 	}
 
-	public String getAnsiSpecialtyCode() {
-		return ansiSpecialtyCode;
-	}
-
-	public void setAnsiSpecialtyCode(String ansiSpecialtyCode) {
-		this.ansiSpecialtyCode = ansiSpecialtyCode;
-	}
-
-	public String getNote() {
-		return note;
-	}
-
-	public void setNote(String note) {
-		this.note = note;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getAddress2() {
-		return address2;
-	}
-
-	public void setAddress2(String address2) {
-		this.address2 = address2;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getZip() {
-		return zip;
-	}
-
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public String getFax() {
-		return fax;
-	}
-
-	public void setFax(String fax) {
-		this.fax = fax;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	@Override
 	public String toString() {
-		return "Organization [sugarId=" + sugarId + ", athenaId=" + athenaId + ", npiNumber=" + npiNumber + ", name="
-				+ name + ", providerType=" + providerType + ", specialty=" + specialty + ", ansiSpecialtyCode="
-				+ ansiSpecialtyCode + ", note=" + note + ", address=" + address + ", address2=" + address2 + ", city="
-				+ city + ", state=" + state + ", zip=" + zip + ", phone=" + phone + ", fax=" + fax + ", email=" + email
-				+ "]";
+		return "Organization [sugarId=" + sugarId + ", athenaId=" + athenaId + ", name=" + name
+				+ ", hospitalAffiliations=" + Arrays.toString(hospitalAffiliations) + ", specialty=" + specialty + "]";
 	}
 
 }
